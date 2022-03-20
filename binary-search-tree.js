@@ -73,8 +73,11 @@ class BST {
                return true;
            }
            if(data < current.data){
-               return true;
+               current = current.left;
+           } else {
+
            }
+
        }
     }
 }
