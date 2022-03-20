@@ -80,6 +80,9 @@ class BST {
        }
        return false;
     }
+    remove(data){
+
+    }
 }
 
 
