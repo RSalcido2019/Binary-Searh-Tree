@@ -75,7 +75,7 @@ class BST {
            if(data < current.data){
                current = current.left;
            } else {
-
+               current = current.right;
            }
 
        }
