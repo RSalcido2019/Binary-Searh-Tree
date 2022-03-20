@@ -77,8 +77,8 @@ class BST {
            } else {
                current = current.right;
            }
-
        }
+       return false;
     }
 }
 
