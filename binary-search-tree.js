@@ -60,7 +60,20 @@ class BST {
             } else {
                 current = current.right;
             }
+            if (current === null){
+                return null;
+            }
         }
+        return current;
+    }
+    isPresent(data) {
+        let current = this.root;
+       while (current){
+           if (data === current.data){
+               return true;
+           }
+       }
     }
 }
+
 
