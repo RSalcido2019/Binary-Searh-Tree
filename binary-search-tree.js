@@ -72,6 +72,9 @@ class BST {
            if (data === current.data){
                return true;
            }
+           if(data < current.data){
+               return true;
+           }
        }
     }
 }
