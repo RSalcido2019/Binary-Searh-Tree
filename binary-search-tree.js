@@ -82,6 +82,7 @@ class BST {
     }
     // recursive function that is passing node and data. Data is the data we are trying to remove.
     remove(data){
+        //THIS CHECKS TO SEE IF THE TREE IS EMPTY
      const removeNode = function (node, data){
          if (node == null) {
              return null;
@@ -115,6 +116,8 @@ class BST {
              return node;
          }
      }
+     //THIS IS WHERE I CALL THE FUNCTION.
+        // I'M ASSIGNING THIS.ROOT TO THE removeNode FUNCTION. INSIDE THE FUNCTION, I PASS IN THE ROOT NODE FOLLOWED BY THE DATA SEARCHED.
      this.root = removeNode(this.root, data);
     }
 }
@@ -123,7 +126,7 @@ class BST {
 
 
 
-
+const bst = new BST();
 
 
 
