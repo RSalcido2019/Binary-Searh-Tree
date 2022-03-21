@@ -95,6 +95,10 @@ class BST {
              if (node.left == null) {
                  return node.right;
              }
+             // checking if the node has no right children
+             if (node.right == null) {
+                 return node.left;
+             }
          }
      }
     }
