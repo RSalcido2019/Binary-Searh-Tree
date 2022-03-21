@@ -100,7 +100,10 @@ class BST {
                  return node.left;
              }
              // we are checking if the node has two children
-
+             var tempNode = node.right;
+             while (tempNode.left !== null) {
+                 tempNode = tempNode.left;
+             }
          }
      }
     }
