@@ -104,10 +104,58 @@ class BST {
              while (tempNode.left !== null) {
                  tempNode = tempNode.left;
              }
+             node.data = tempNode.data;
+             node.right = removeNode(node.right, tempNode.data);
+             return node;
+         } else if(dat < node.data) {
+             node.left = removeNode(node.left, data);
+             return node;
+         } else {
+             node.right = removeNode(node.right, data);
+             return node;
          }
      }
+     this.root = removeNode(this.root, data);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
