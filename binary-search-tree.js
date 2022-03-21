@@ -87,20 +87,24 @@ class BST {
          if (node == null) {
              return null;
          }
-         // checking if the node has no children
+         // CHECKS TO SEE IF WE HAVE FOUND THE NODE WITH THE DATA
          if (data == node.data){
+             // checking if the node has no children
              if (node.left == null & node.right == null) {
                  return null;
              }
-            // checking if the node has no left children
+            // checking if the node has no left children REPLACES THE DELETED NODE WITH THE RIGHT NODE
              if (node.left == null) {
                  return node.right;
              }
-             // checking if the node has no right children
+             // checking if the node has no right children. REPLACES THE DELETED NODE WITH THE LEFT NODE
              if (node.right == null) {
                  return node.left;
              }
-             // we are checking if the node has two children
+             // we are checking if the node has two children.
+             //IF THIS IS THE CASE, THE TempNode will go to the right and then to the farthest left node or null.
+
+             // The last left node  WILL THEN BECOME THE TempNode in place of the parent node deleted.
              var tempNode = node.right;
              while (tempNode.left !== null) {
                  tempNode = tempNode.left;
