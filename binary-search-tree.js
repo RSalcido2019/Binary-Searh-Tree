@@ -80,6 +80,7 @@ class BST {
        }
        return false;
     }
+    // recursive function that is passing node and data. Data is the data we are trying to remove.
     remove(data){
      const removeNode = function (node, data){
          if (node == null) {
