@@ -86,6 +86,7 @@ class BST {
          if (node == null) {
              return null;
          }
+         // checking if the node has no children
      }
     }
 }
