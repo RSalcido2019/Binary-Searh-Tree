@@ -99,6 +99,8 @@ class BST {
              if (node.right == null) {
                  return node.left;
              }
+             // we are checking if the node has two children
+
          }
      }
     }
